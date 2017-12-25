@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="./canvas.css">
+
+</head>
+<body>
+<canvas id="canvas" width=300px height=300px></canvas>
+<div id="actions" class="actions">
+    <svg class="icon" id="pen">
+        <use xlink:href="#icon-pen"></use>
+    </svg>
+
+    <svg class="icon" id="eraser">
+        <use xlink:href="#icon-erase"></use>
+    </svg>
+
+    <svg class="icon" id="clear">
+    <use xlink:href="#icon-clear"></use>
+</svg>
+
+    <svg class="icon" id="download">
+        <use xlink:href="#icon-download"></use>
+    </svg>
+</div>
+
+<div class="color">
+    <ol>
+        <li  id="red"   class="red"></li>
+        <li  id="blue"  class="blue"></li>
+        <li  id="green"  class="green"></li>
+    </ol>
+
+</div>
+
+<ol class="line">
+    <li class="thin" id="thin"></li>
+    <li class="thick" id="thick"></li>
+</ol>
+
+
+<script type="text/javascript" src="./canvas.js"></script>
+<script src="//at.alicdn.com/t/font_519816_5ityxdek869zr529.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+ol li {
+    list-style: none;
+}
+
+
+
+body{
+    margin:0;
+    overflow: hidden;
+
+}
+
+#canvas{
+    display:block;
+
+}
+
+.actions{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:16px;
+}
+
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    margin-right:1em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.actions  svg{
+    width:1.5em;
+    height:1.5em;
+}
+
+.actions  svg.active{
+
+    fill:red;
+    transform: scale(1.2);
+}
+
+.color{
+    position: fixed;
+    top:60px;
+    left:6px;
+}
+
+
+.color ol li{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin:10px 0;
+    transition: all 0.3s;
+}
+
+.color  .red{
+    background-color: red;
+}
+
+.color  .blue{
+    background-color: deepskyblue;
+}
+
+.color  .green{
+    background-color: olivedrab;
+}
+
+
+.color .red.active{
+   transform: scale(1.2);
+
+}
+.color .blue.active{
+    transform: scale(1.2);
+}
+.color .green.active{
+    transform: scale(1.2);
+}
+
+.line{
+    position: fixed;
+    top:10px;
+    right:30px;
+}
+
+.line li{
+    margin:10px 0 ;
+    transition: all 0.3s;
+}
+
+.line .thin{
+    border-bottom: 3px solid black;
+    height:0;
+    width:20px;
+}
+
+.line .thick{
+    border-bottom: 6px solid black;
+    height:0;
+    width:20px;
+}
+
+.line .thick.active{
+    transform: scale(1.2);
+}
+
+.line .thin.active{
+    transform: scale(1.2);
+}
